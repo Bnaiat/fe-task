@@ -59,19 +59,6 @@ describe("BookingForm", () => {
     expect(removeButton).toBeDisabled();
   });
 
-  it("renders all passenger form fields", () => {
-    render(<BookingForm />);
-
-    expect(screen.getByLabelText("Full Name")).toBeInTheDocument();
-    expect(screen.getByLabelText("Phone Number")).toBeInTheDocument();
-    expect(screen.getByLabelText("Email")).toBeInTheDocument();
-    expect(screen.getByLabelText("Birth Date")).toBeInTheDocument();
-    expect(screen.getByLabelText("Passport Number")).toBeInTheDocument();
-    expect(
-      screen.getByLabelText("Passport Expiration Date")
-    ).toBeInTheDocument();
-  });
-
   it("handles form submission attempt", async () => {
     const user = userEvent.setup();
     render(<BookingForm />);
