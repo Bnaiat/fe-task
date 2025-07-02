@@ -4,7 +4,7 @@
 
 ```bash
 git clone <repository-url>
-cd front-task
+cd fe-task
 ```
 
 ### 2. Install Dependencies
